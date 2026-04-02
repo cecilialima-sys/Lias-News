@@ -50,17 +50,16 @@ export function Header({ compact = false }: HeaderProps) {
           className="flex items-center gap-4 no-underline"
           aria-label="Página inicial da LIAS"
         >
-          <div
+          <Image
+            src="/logo-lias.png"
+            alt="Logo da Liga de Inteligência Artificial na Saúde - LIAS"
+            width={80}
+            height={80}
             className={`
-              grid place-items-center rounded-[22px] font-heading text-white font-bold tracking-wider
-              bg-gradient-to-br from-[var(--success-dark)] via-[var(--primary)] to-[var(--accent)]
-              shadow-[inset_0_1px_0_rgba(255,255,255,0.2)]
-              transition-all duration-200
-              ${condensed ? "h-[54px] w-[54px] rounded-[18px] text-[0.98rem]" : "h-[68px] w-[68px] text-[1.1rem]"}
+              object-contain transition-all duration-200
+              ${condensed ? "h-[54px] w-[54px]" : "h-[68px] w-[68px]"}
             `}
-          >
-            LIAS
-          </div>
+          />
           <div>
             <p
               className={`
@@ -84,7 +83,7 @@ export function Header({ compact = false }: HeaderProps) {
             alt="Logo oficial da UNIFAL-MG"
             width={200}
             height={64}
-            className={`block w-auto object-contain ${condensed ? "max-h-12" : "max-h-16"}`}
+            className={`block h-auto w-auto object-contain ${condensed ? "max-h-12" : "max-h-16"}`}
           />
         </div>
       </div>
