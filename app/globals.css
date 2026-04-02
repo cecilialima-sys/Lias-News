@@ -1,0 +1,179 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --bg: #071827;
+  --surface: rgba(255, 255, 255, 0.8);
+  --surface-strong: #ffffff;
+  --border: rgba(24, 88, 112, 0.16);
+  --text: #0a2741;
+  --muted: #4e6f7f;
+  --primary: #117ca1;
+  --primary-dark: #0b3d68;
+  --accent: #55d8e8;
+  --success: #18b97f;
+  --success-dark: #0d6b50;
+  --shadow: 0 24px 60px rgba(9, 44, 73, 0.14);
+  
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.145 0 0);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.145 0 0);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.145 0 0);
+  --radius: 0.625rem;
+}
+
+@theme inline {
+  --font-sans: 'Plus Jakarta Sans', sans-serif;
+  --font-heading: 'Space Grotesk', sans-serif;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: var(--font-sans);
+  color: var(--text);
+  background:
+    radial-gradient(circle at top left, rgba(85, 216, 232, 0.18), transparent 26%),
+    radial-gradient(circle at right center, rgba(24, 185, 127, 0.14), transparent 24%),
+    radial-gradient(circle at bottom right, rgba(16, 93, 140, 0.20), transparent 26%),
+    linear-gradient(180deg, #06131f 0%, #082033 48%, #0b2740 100%);
+  overflow-x: hidden;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(15, 92, 192, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(15, 92, 192, 0.03) 1px, transparent 1px);
+  background-size: 34px 34px;
+  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5), transparent 88%);
+  z-index: 0;
+}
+
+a {
+  color: inherit;
+}
+
+/* Neural Background Animation */
+.neural-bg {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.neural-cluster {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -2%;
+  height: 46vh;
+  opacity: 0.58;
+}
+
+.neural-link,
+.neural-node {
+  position: absolute;
+  pointer-events: auto;
+}
+
+.neural-link {
+  height: 1.5px;
+  transform-origin: 0 50%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, rgba(117, 225, 236, 0.12), rgba(117, 225, 236, 0.28), rgba(40, 200, 135, 0.18));
+  box-shadow: 0 0 10px rgba(98, 226, 232, 0.08);
+  overflow: hidden;
+}
+
+.neural-link::after {
+  content: "";
+  position: absolute;
+  inset: -1px 0;
+  width: 34%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0), rgba(132, 248, 255, 0.95), rgba(60, 255, 171, 0));
+  transform: translateX(-140%);
+  opacity: 0;
+}
+
+.neural-link.is-energized {
+  background: linear-gradient(90deg, rgba(117, 225, 236, 0.18), rgba(117, 225, 236, 0.72), rgba(40, 200, 135, 0.42));
+  box-shadow: 0 0 18px rgba(98, 226, 232, 0.28);
+}
+
+.neural-link.is-energized::after {
+  opacity: 1;
+  animation: neural-flow 900ms linear forwards;
+}
+
+.neural-node {
+  width: 8px;
+  height: 8px;
+  margin-left: -4px;
+  margin-top: -4px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #b6fbff 0%, #67dce8 52%, rgba(103, 220, 232, 0.18) 100%);
+  box-shadow: 0 0 0 4px rgba(82, 216, 231, 0.08), 0 0 16px rgba(82, 216, 231, 0.18);
+}
+
+.neural-node::after {
+  content: "";
+  position: absolute;
+  inset: -5px;
+  border-radius: 50%;
+  border: 1px solid rgba(108, 237, 244, 0.18);
+}
+
+.neural-node.is-energized {
+  background: radial-gradient(circle, #ffffff 0%, #7af0ff 44%, #32e89d 100%);
+  box-shadow: 0 0 0 6px rgba(82, 216, 231, 0.15), 0 0 24px rgba(82, 216, 231, 0.38);
+  animation: neural-pulse 800ms ease-out;
+}
+
+@keyframes neural-flow {
+  from {
+    transform: translateX(-140%);
+  }
+  to {
+    transform: translateX(360%);
+  }
+}
+
+@keyframes neural-pulse {
+  0% {
+    transform: scale(0.92);
+  }
+  35% {
+    transform: scale(1.35);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
