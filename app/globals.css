@@ -177,3 +177,21 @@ a {
     transform: scale(1);
   }
 }
+
+/* Logo LIAS sem fundo branco */
+.lias-logo {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 92px;
+  max-height: 92px;
+  object-fit: contain;
+  flex: 0 0 auto;
+  transition: width 180ms ease, height 180ms ease;
+}
+
+/* Topbar condensed styles */
+.topbar.is-condensed .lias-logo {
+  max-width: 72px;
+  max-height: 72px;
+}

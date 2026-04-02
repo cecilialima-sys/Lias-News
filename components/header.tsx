@@ -53,12 +53,9 @@ export function Header({ compact = false }: HeaderProps) {
           <Image
             src="/logo-lias.png"
             alt="Logo da Liga de Inteligência Artificial na Saúde - LIAS"
-            width={80}
-            height={80}
-            className={`
-              object-contain transition-all duration-200 mix-blend-multiply
-              ${condensed ? "h-[54px] w-[54px]" : "h-[68px] w-[68px]"}
-            `}
+            width={92}
+            height={92}
+            className={`lias-logo ${condensed ? "!max-w-[72px] !max-h-[72px]" : ""}`}
           />
           <div>
             <p
@@ -78,15 +75,10 @@ export function Header({ compact = false }: HeaderProps) {
             ${condensed ? "min-h-[72px] p-2.5 px-3.5" : "min-h-[92px] p-3 px-4"}
           `}
         >
-          <Image
+          <img
             src="https://www.unifal-mg.edu.br/portal2/wp-content/uploads/sites/52/2018/04/cropped-logo-unifal-1.png"
             alt="Logo oficial da UNIFAL-MG"
-            width={200}
-            height={64}
-            loading="eager"
-            priority
-            style={{ width: "auto", height: "auto" }}
-            className={`block max-w-[200px] object-contain ${condensed ? "max-h-12" : "max-h-16"}`}
+            className={`block w-auto object-contain ${condensed ? "max-h-12" : "max-h-16"}`}
           />
         </div>
       </div>
