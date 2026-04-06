@@ -26,7 +26,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="pt-BR">
+    <html lang="pt-BR" data-scroll-behavior="smooth">
       <body className={`${plusJakarta.variable} ${spaceGrotesk.variable} font-sans antialiased`}>
         {children}
         <Analytics />
