@@ -1,5 +1,5 @@
 .destaque {
-  background: linear-gradient(to bottom, rgba(11, 61, 104, 0.3), rgba(85, 216, 232, 0.2), rgba(24, 185, 127, 0.2));
+  background: linear-gradient(to bottom, rgba(100, 150, 200, 0.15), rgba(140, 220, 235, 0.12), rgba(120, 210, 180, 0.1));
   transition: opacity 0.3s;
 }
 .destaque:hover {
