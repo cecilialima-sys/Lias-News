@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LIAS News</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body data-page="ai-news">
+  <div class="site-shell">
+    <header class="topbar compact">
+      <div class="brand-row">
+        <a class="brand-lockup" href="../index.html" aria-label="Página inicial da LIAS">
+          <img src="../assets/logo-lias-transparent.png?v=20260402" alt="Logo da LIAS" class="lias-logo" onerror="this.onerror=null;this.src='../assets/lias-logo.svg';">
+          <div>
+            <p class="eyebrow">Liga de Inteligência Artificial na Saúde</p>
+          </div>
+        </a>
+        <div class="unifal-slot">
+          <img
+            src="https://www.unifal-mg.edu.br/portal2/wp-content/uploads/sites/52/2018/04/cropped-logo-unifal-1.png"
+            alt="Logo oficial da UNIFAL-MG"
+            class="unifal-logo"
+          >
+        </div>
+      </div>
+
+      <nav class="main-nav" aria-label="Navegação principal">
+        <a href="../index.html">Home</a>
+        <a class="active" href="ai-news.html">Atualizações em Inteligência Artificial</a>
+        <a href="ai-health.html">Inteligência Artificial na Saúde</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <p class="section-tag">Cobertura editorial</p>
+        <h2>Atualizações em Inteligência Artificial</h2>
+        <p>
+          Notícias sobre novas IAs, lançamentos de ferramentas, pesquisas recentes, avanços tecnológicos,
+          artigos e tendências que impactam o ecossistema de inteligência artificial.
+        </p>
+      </section>
+
+      <section class="topic-strip" aria-label="Temas abordados">
+        <span>Novas IAs</span>
+        <span>Ferramentas</span>
+        <span>Pesquisa</span>
+        <span>Mercado</span>
+        <span>Regulação</span>
+      </section>
+
+      <section class="section-header">
+        <div>
+          <p class="section-tag">Publicações</p>
+          <h2>Notícias e tendências de IA</h2>
+        </div>
+      </section>
+
+      <section class="news-grid full-list" id="category-news" aria-live="polite"></section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <p class="footer-title">Liga de Inteligência Artificial na Saúde (LIAS)</p>
+        <p>UNIFAL-MG</p>
+      </div>
+      <div>
+        <p>Ano de criação do portal</p>
+        <strong>2026</strong>
+      </div>
+    </footer>
+  </div>
+
+  <script src="../data/noticias.js"></script>
+  <script src="../script.js"></script>
+</body>
+</html>

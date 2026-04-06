@@ -1,0 +1,83 @@
+<svg width="420" height="320" viewBox="0 0 420 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="ringStroke" x1="82" y1="44" x2="338" y2="240" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8DEEFF"/>
+      <stop offset="1" stop-color="#38D49F"/>
+    </linearGradient>
+    <linearGradient id="brainStroke" x1="140" y1="88" x2="286" y2="196" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#B7F7FF"/>
+      <stop offset="1" stop-color="#6FF0C6"/>
+    </linearGradient>
+  </defs>
+
+  <g opacity="0.92">
+    <path d="M126 40C154 26 187 18 220 18C253 18 286 26 314 40" stroke="url(#ringStroke)" stroke-width="3" stroke-linecap="round"/>
+    <path d="M95 69C76 90 63 116 58 145" stroke="url(#ringStroke)" stroke-width="3" stroke-linecap="round"/>
+    <path d="M362 145C357 116 344 90 325 69" stroke="url(#ringStroke)" stroke-width="3" stroke-linecap="round"/>
+    <path d="M97 217C83 199 72 179 65 158" stroke="url(#ringStroke)" stroke-width="3" stroke-linecap="round"/>
+    <path d="M355 158C348 179 337 199 323 217" stroke="url(#ringStroke)" stroke-width="3" stroke-linecap="round"/>
+    <path d="M150 255C171 264 195 269 220 269C245 269 269 264 290 255" stroke="url(#ringStroke)" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="220" cy="144" r="112" stroke="url(#ringStroke)" stroke-width="2" opacity="0.55"/>
+  </g>
+
+  <g stroke="url(#brainStroke)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M173 91C159 97 151 111 151 126C151 134 154 141 159 146C151 151 146 160 146 170C146 188 160 201 178 201C182 201 186 200 190 198C196 208 208 214 221 214V89C204 89 188 89 173 91Z"/>
+    <path d="M267 91C281 97 289 111 289 126C289 134 286 141 281 146C289 151 294 160 294 170C294 188 280 201 262 201C258 201 254 200 250 198C244 208 232 214 219 214"/>
+    <path d="M191 111H207"/>
+    <path d="M183 129H207"/>
+    <path d="M176 147H207"/>
+    <path d="M184 165H207"/>
+    <path d="M193 183H207"/>
+    <path d="M231 111H247"/>
+    <path d="M231 129H255"/>
+    <path d="M231 147H263"/>
+    <path d="M231 165H254"/>
+    <path d="M231 183H246"/>
+    <path d="M219 97V206"/>
+    <path d="M170 111L183 111"/>
+    <path d="M162 129L175 129"/>
+    <path d="M156 147L170 147"/>
+    <path d="M165 165L177 165"/>
+    <path d="M175 183L188 183"/>
+    <path d="M250 111L268 111"/>
+    <path d="M255 129L275 129"/>
+    <path d="M263 147L281 147"/>
+    <path d="M254 165L273 165"/>
+    <path d="M247 183L264 183"/>
+  </g>
+
+  <g fill="#B7F7FF">
+    <circle cx="156" cy="147" r="4"/>
+    <circle cx="170" cy="111" r="4"/>
+    <circle cx="162" cy="129" r="4"/>
+    <circle cx="165" cy="165" r="4"/>
+    <circle cx="175" cy="183" r="4"/>
+    <circle cx="281" cy="147" r="4"/>
+    <circle cx="268" cy="111" r="4"/>
+    <circle cx="275" cy="129" r="4"/>
+    <circle cx="273" cy="165" r="4"/>
+    <circle cx="264" cy="183" r="4"/>
+    <circle cx="219" cy="97" r="4"/>
+    <circle cx="219" cy="206" r="4"/>
+  </g>
+
+  <g opacity="0.9" transform="translate(206 134)">
+    <rect x="-18" y="-18" width="36" height="36" rx="7" fill="#F7FDFF" stroke="#8BE7FF" stroke-width="2"/>
+    <path d="M0 -30V-18M0 18V30M-30 0H-18M18 0H30M-23 -23L-15 -15M23 -23L15 -15M-23 23L-15 15M23 23L15 15" stroke="#8BE7FF" stroke-width="2.3" stroke-linecap="round"/>
+    <path d="M0 -10V10M-10 0H10" stroke="#18B97F" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="0" cy="0" r="4" fill="#0B3D68"/>
+  </g>
+
+  <g opacity="0.85">
+    <path d="M82 284L110 258L142 280L172 248L210 286L246 260L279 282L314 246L352 286" stroke="url(#ringStroke)" stroke-width="2.6" stroke-linecap="round"/>
+    <circle cx="82" cy="284" r="5" fill="#9AF6FF"/>
+    <circle cx="110" cy="258" r="5" fill="#9AF6FF"/>
+    <circle cx="142" cy="280" r="5" fill="#56E4E9"/>
+    <circle cx="172" cy="248" r="5" fill="#56E4E9"/>
+    <circle cx="210" cy="286" r="5" fill="#56E4E9"/>
+    <circle cx="246" cy="260" r="5" fill="#43DBCB"/>
+    <circle cx="279" cy="282" r="5" fill="#43DBCB"/>
+    <circle cx="314" cy="246" r="5" fill="#43DBCB"/>
+    <circle cx="352" cy="286" r="5" fill="#9AF6FF"/>
+  </g>
+</svg>

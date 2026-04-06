@@ -1,0 +1,91 @@
+<svg width="220" height="220" viewBox="0 0 220 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="ring" x1="24" y1="24" x2="196" y2="196" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F7FBFF"/>
+      <stop offset="1" stop-color="#DDEAF6"/>
+    </linearGradient>
+    <linearGradient id="green" x1="60" y1="72" x2="112" y2="124" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2BE08A"/>
+      <stop offset="1" stop-color="#0A8656"/>
+    </linearGradient>
+    <linearGradient id="cyan" x1="108" y1="72" x2="160" y2="124" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#46E7FF"/>
+      <stop offset="1" stop-color="#1491C6"/>
+    </linearGradient>
+    <linearGradient id="aqua" x1="60" y1="118" x2="112" y2="170" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#5EF1FF"/>
+      <stop offset="1" stop-color="#0A9BB6"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="108" y1="118" x2="160" y2="170" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2348F5"/>
+      <stop offset="1" stop-color="#0A2F88"/>
+    </linearGradient>
+  </defs>
+
+  <circle cx="110" cy="110" r="104" fill="url(#ring)" stroke="#1E567D" stroke-width="4"/>
+  <circle cx="110" cy="110" r="81" fill="#16496C" stroke="#F7FBFF" stroke-width="4"/>
+
+  <path d="M110 28
+           A82 82 0 0 1 183.2 72" stroke="#1E567D" stroke-width="18" stroke-linecap="round"/>
+  <path d="M36.8 72
+           A82 82 0 0 1 110 28" stroke="#1E567D" stroke-width="18" stroke-linecap="round"/>
+  <path d="M183.2 148
+           A82 82 0 0 1 110 192" stroke="#1E567D" stroke-width="18" stroke-linecap="round"/>
+  <path d="M110 192
+           A82 82 0 0 1 36.8 148" stroke="#1E567D" stroke-width="18" stroke-linecap="round"/>
+
+  <g font-family="Arial, sans-serif" font-weight="700" fill="#1E567D" text-anchor="middle">
+    <text x="110" y="20" font-size="10">LIGA DE INTELIGENCIA ARTIFICIAL NA SAUDE</text>
+    <text x="110" y="207" font-size="14">UNIFAL - MG</text>
+  </g>
+
+  <g filter="url(#none)">
+    <path d="M110 110C110 79 88 62 61 62C56 62 53 66 53 71C53 96 76 110 110 110Z" fill="url(#green)"/>
+    <path d="M110 110C110 79 132 62 159 62C164 62 167 66 167 71C167 96 144 110 110 110Z" fill="url(#cyan)"/>
+    <path d="M110 110C110 141 88 158 61 158C56 158 53 154 53 149C53 124 76 110 110 110Z" fill="url(#aqua)"/>
+    <path d="M110 110C110 141 132 158 159 158C164 158 167 154 167 149C167 124 144 110 110 110Z" fill="url(#blue)"/>
+  </g>
+
+  <g stroke="#F9FFFF" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M73 86L80 80L87 86L80 92Z"/>
+    <path d="M68 86H58M80 76V66M92 86H102M80 96V106M64 78L58 72M96 78L102 72M64 94L58 100M96 94L102 100"/>
+  </g>
+
+  <g fill="#FFFFFF">
+    <rect x="124" y="73" width="12" height="34" rx="2"/>
+    <rect x="113" y="84" width="34" height="12" rx="2"/>
+    <rect x="128.5" y="86" width="3" height="16" fill="#2B8C8C"/>
+    <path d="M130 88C128.4 88 127.1 89.3 127.1 90.9C127.1 92.2 128 93.2 129.2 93.6L128.2 99.7C128.1 100.3 128.6 100.9 129.2 100.9H130.8C131.4 100.9 131.9 100.3 131.8 99.7L130.8 93.6C132 93.2 132.9 92.2 132.9 90.9C132.9 89.3 131.6 88 130 88Z" fill="#2B8C8C"/>
+  </g>
+
+  <g stroke="#FFFFFF" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M72 140C72 131 78 126 84 126C90 126 95 131 95 137V145"/>
+    <path d="M95 145C95 150 92 153 88 153"/>
+    <path d="M71 140C71 146 67 150 63 150C60 150 58 148 58 145C58 141 61 139 64 139C67 139 70 141 71 144"/>
+    <path d="M95 145C96 142 99 140 102 140C105 140 108 142 108 145C108 148 106 150 103 150C99 150 96 147 95 145"/>
+  </g>
+
+  <g fill="#FFFFFF">
+    <path d="M144 126C141 121 134 121 131 126C128 131 131 136 136 140L145 148L154 140C159 136 162 131 159 126C156 121 149 121 146 126L145 128L144 126Z"/>
+    <path d="M129 141H138L141 136L144 145L147 138H159" stroke="#16496C" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </g>
+
+  <g>
+    <rect x="96" y="96" width="28" height="28" rx="4" fill="#FFFFFF" stroke="#A6B8C7" stroke-width="2"/>
+    <circle cx="110" cy="110" r="4" fill="#1E567D"/>
+    <g stroke="#1E567D" stroke-width="2" stroke-linecap="round">
+      <path d="M110 90V98M110 122V130M90 110H98M122 110H130"/>
+      <path d="M96 96L101 101M119 119L124 124M96 124L101 119M119 101L124 96"/>
+    </g>
+    <g fill="#1E567D">
+      <circle cx="110" cy="90" r="2.3"/>
+      <circle cx="110" cy="130" r="2.3"/>
+      <circle cx="90" cy="110" r="2.3"/>
+      <circle cx="130" cy="110" r="2.3"/>
+      <circle cx="96" cy="96" r="2.3"/>
+      <circle cx="124" cy="124" r="2.3"/>
+      <circle cx="96" cy="124" r="2.3"/>
+      <circle cx="124" cy="96" r="2.3"/>
+    </g>
+  </g>
+</svg>
