@@ -15,8 +15,8 @@ export default function AINewsPage() {
 
   const topics = [
     "Modelos de linguagem",
-    "Agentes inteligentes",
-    "Regulação",
+    "Benchmarks",
+    "Infraestrutura",
     "Pesquisa",
     "Mercado"
   ]

@@ -17,8 +17,8 @@ export default function AIHealthPage() {
     "Diagnóstico",
     "Enfermagem",
     "Hospitais",
-    "Pesquisa clínica",
-    "Gestão"
+    "Pesquisa médica",
+    "Atendimento"
   ]
 
   return (
