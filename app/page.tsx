@@ -4,6 +4,7 @@ import { Footer } from "@/components/footer"
 import { NewsCard } from "@/components/news-card"
 import { NeuralBackground } from "@/components/neural-background"
 import { getLatestNoticias } from "@/lib/noticias"
+import { weeklyReports } from "@/lib/reports"
 
 export default function HomePage() {
   const latestNews = getLatestNoticias(3)
@@ -104,6 +105,44 @@ export default function HomePage() {
                 <p className="mt-2 leading-relaxed text-[var(--muted)]">{item.desc}</p>
               </article>
             ))}
+          </section>
+
+          <section className="mb-8">
+            <div className="mb-4.5 flex flex-col items-start justify-between gap-4.5 sm:flex-row sm:items-end">
+              <div>
+                <p className="mb-2 text-[0.78rem] font-bold uppercase tracking-wider text-[var(--primary)]">
+                  Relatórios da semana
+                </p>
+                <h2 className="m-0 font-heading text-[clamp(1.5rem,2.8vw,2.4rem)] font-bold text-[#f6fbff]">
+                  PDFs publicados no portal
+                </h2>
+              </div>
+            </div>
+
+            <div className="grid gap-5 md:grid-cols-2">
+              {weeklyReports.map((report) => (
+                <article
+                  key={report.id}
+                  className="rounded-[28px] border border-[var(--border)] bg-[var(--surface)] p-6.5 shadow-[var(--shadow)] backdrop-blur-sm"
+                >
+                  <p className="mb-2 text-[0.78rem] font-bold uppercase tracking-wider text-[var(--primary)]">
+                    {report.categoria}
+                  </p>
+                  <h3 className="m-0 font-heading text-lg font-bold">
+                    {report.titulo} • {report.periodo}
+                  </h3>
+                  <p className="mt-2 leading-relaxed text-[var(--muted)]">{report.descricao}</p>
+                  <a
+                    href={report.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-4 inline-block font-bold text-[#7be4ef] no-underline hover:underline"
+                  >
+                    Abrir relatório em PDF
+                  </a>
+                </article>
+              ))}
+            </div>
           </section>
 
           {/* Latest News Section */}
