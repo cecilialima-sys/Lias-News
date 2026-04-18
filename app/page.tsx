@@ -23,7 +23,7 @@ export default function HomePage() {
                 Portal acadêmico de notícias e educação
               </p>
               <h2 className="m-0 max-w-[12ch] font-heading text-[clamp(2rem,4vw,3.8rem)] font-bold leading-none">
-                Informação confiável sobre o futuro da medicina orientado por inteligência artificial.
+                Informação confiável sobre o futuro da saúde orientado por inteligência artificial.
               </h2>
               <p className="mt-4 leading-relaxed text-[var(--muted)]">
                 Este é o portal informativo da <strong>Liga de Inteligência Artificial na Saúde (LIAS)</strong>,
